@@ -1,4 +1,4 @@
-# LearnBasicAlgorithm
+# Program-Learning-Basic
 
 In this file, I will take notes about my learning basic algorithm.
 
