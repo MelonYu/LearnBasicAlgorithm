@@ -43,4 +43,4 @@ if __name__ == '__main__':
     s = Solution()
     nums = [1,3,5,6]
     target = 7
-    print(s.searchInsert(nums, target)) 
+    print(s.searchInsert(nums, target)) # should print 4
