@@ -4,7 +4,7 @@ Given a string s consists of upper/lower-case alphabets and empty space characte
 Note: A word is defined as a character sequence consists of non-space characters only.
 
 '''
-
+# python 3.6
 class Solution:
     def lengthOfLastWord(self, s):
         """
@@ -16,11 +16,11 @@ class Solution:
             return 0
         s = ''.join(s)
         l = list(map(len,s.split(' ')))
-        return l[-1]
+        return l[-1] 
 
 if __name__ == '__main__':
     words = '  I Love You  '
     s = Solution()
     last = s.lengthOfLastWord(words)
-    print(last)
+    print(last) # should be 3
 
