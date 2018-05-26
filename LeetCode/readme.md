@@ -6,6 +6,6 @@ Here, I will record and share my learning trajectory with all of you.
 
 Thanks for giving advice. 
 
-Make commom progress.
+## 2018-05-26
 
- 
+Finished the **easy** part for total  10 questions.
