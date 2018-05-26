@@ -1,3 +1,7 @@
+'''
+I should explain the Algorithm more detailed.
+'''
+
 class Solution(object):
     def maxSubArray(self, nums):
         """
