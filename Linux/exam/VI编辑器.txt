@@ -1,0 +1,18 @@
+利用VI编辑器，创建文本，熟悉使用。
+1. 将/etc/passwd 拷贝到根目录，对其进行操作。
+2. 使用vi编辑passwd 开始定位在第10行
+3. 任意删除一行或者多行
+4. 任意复制一行或者式行
+5. 任意删除单个字符，或者词组
+6. 将所有的/sbin/nologin替换为/bin/bash
+7. 查找
+
+
+解答：
+cp /etc/passwd passwd
+vi +10 passwd
+dd, 4dd
+yy, 4yy
+x, dw
+:%s/\/sbin\/nologin/\/bin\/bash/g
+/bin      ?bin

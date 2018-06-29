@@ -1,0 +1,24 @@
+将网卡按照PCI编号从低到高排序
+lscpi、ifconfig配合完成
+通过ping命令测试10.217.253.5到10.217.253.35之间的所有主机是否在线
+在10.217.253.20启动python -mSimpleHTTPServer，iptable/firewal禁止or允许tcp端口8000，在笔记本能够访问Http服务或者不能访问
+通过ssh命令自动登陆以下机器，并打印出CPU、内存、磁盘使用率 (账号/密码： root 12345678,需设置免密钥登陆)
+10.217.253.20
+10.217.253.3
+10.217.253.31
+10.217.253.33
+10.217.253.11
+
+
+- 网卡按照PCI编号排序: print_pci.sh
+
+- ping命令测试： pingTest.sh
+
+- iptables -A INPUT -p tcp --dport 8000 -j DROP # 禁止访问
+  iptables -A INPUT -p tcp --dport 8000 -j ACCEPT # 允许访问
+
+- ssh自动登录获取系统信息：print_sysinfo.sh
+
+首先设置免秘钥登录：
+ssh-kengen -t rsa
+scp -r /root/.ssh/id_rsa.pub root@10.217.253.3:/root/.ssh/authorized_keys

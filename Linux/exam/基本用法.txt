@@ -1,0 +1,28 @@
+-打印网卡IP地址
+输出结果示例：127.0.0.1,10.216.2.165
+使用ifconfig、awk完成
+-在10.217.253.20的/home目录查找Daily_Archive.sh文件
+-输出Daily_Archive.sh文件最后10行、取文件头10行
+-在10.217.253.20的/home目录查找包含‘does not exist’的文件
+-替换Daily_Archive.sh文件的‘does not exist’为don’t exist
+-遍历/home目录下的所有文件
+
+
+- ifconfig | awk '/net /{print $2}' ORS=","
+
+- find /home -name Daily_Archive.sh -print
+
+- tail -10 Daily_Archive.sh
+  head -10 Daily_Archive.sh
+
+- grep -rn "does not exist" /home
+
+- find ./ -name Daily_Archive.sh | xargs sed -i "s/does not exist/don\'t exist/g“
+
+- find /home -type f
+  TraverseDir.sh
+
+
+
+
+
