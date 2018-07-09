@@ -20,4 +20,10 @@ notes for linux learning
 
 
 
+## MySQL
+
+excercise in nowcoder, total 61 questions
+
+
+
 Yu Mengling

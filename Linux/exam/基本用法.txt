@@ -17,7 +17,7 @@
 
 - grep -rn "does not exist" /home
 
-- find ./ -name Daily_Archive.sh | xargs sed -i "s/does not exist/don\'t exist/g¡°
+- find ./ -name Daily_Archive.sh | xargs sed -i "s/does not exist/don't exist/g¡°
 
 - find /home -type f
   TraverseDir.sh
