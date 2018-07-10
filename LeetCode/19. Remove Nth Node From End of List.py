@@ -25,8 +25,23 @@ class Solution:
         :type n: int
         :rtype: ListNode
         """
-        m = head
+        dummy = ListNode(0)
+        dummy.next = head
+
+        first = dummy
+        second = dummy
+
+        for i in range(n + 1):
+            first = first.next
+
+        while first != None:
+            first = first.next
+            second = second.next
+
+        second.next = second.next.next
+        return dummy.next
 
 
 if __name__ == '__main__':
+    s = Solution()
     pass
