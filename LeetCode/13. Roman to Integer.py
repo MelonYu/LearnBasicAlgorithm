@@ -15,15 +15,15 @@ def romanToInt(s):
     sym_val = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
     sign = [1]*len(slist)
     for i in range(len(slist)-1):
-        print sym_val[slist[i]]
+        print(sym_val[slist[i]])
         x = sym_val[slist[i+1]] / sym_val[slist[i]]
         if x == 5 or x == 10:
             sign[i] = -1
-    print sign
+    print(sign)
     result = 0
     for j in range(len(slist)):
         result += sign[j] * sym_val[slist[j]]
-        print result
+        print(result)
     return result
 
 romanToInt('MCMXCIV') 
